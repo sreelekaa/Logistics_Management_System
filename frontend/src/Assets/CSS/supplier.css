@@ -1,0 +1,113 @@
+/* supplierManagement.css */
+.supplier-management {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .supplier-management h3 {
+    margin-bottom: 20px;
+  }
+  
+  .supplier-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .supplier-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .supplier-card table th,
+  .supplier-card table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .supplier-card table th {
+    background-color: #f4f4f4;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-update-btn {
+    background-color: #333;
+    color: white;
+    width: 200px;
+    margin-top: 10px;
+  }
+  
+  .edit-btn {
+    background-color: #2196f3;
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .supplier-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .supplier-form h4 {
+    margin-bottom: 10px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .supplier-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Add this for spacing between the buttons */
+  .action-buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  /* Align the add new supplier form neatly */
+  .supplier-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .supplier-form .add-update-btn {
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+  }
+  

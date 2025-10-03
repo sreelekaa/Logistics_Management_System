@@ -1,0 +1,121 @@
+/* tracking.css */
+
+.tracking-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.tracking-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tracking-input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tracking-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tracking-button:hover {
+  background-color: #555;
+}
+
+.error-message {
+  color: red;
+  margin: 20px 0;
+}
+
+.tracking-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.tracking-card h2, .tracking-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.tracking-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tracking-card ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.tracking-details, .faq-section, .customer-support {
+  margin-top: 40px;
+}
+
+.tracking-details h2, .faq-section h2, .customer-support h2 {
+  margin-top: 0;
+}
+
+.customer-support a {
+  color: #333;
+  text-decoration: none;
+}
+
+.customer-support a:hover {
+  text-decoration: underline;
+}
+
+.faq-section ul {
+  list-style-type: disc; /* Ensures the list items have bullets */
+  padding-left: 20px;    /* Adds some padding to the left */
+}
+
+.faq-section li {
+  margin-bottom: 10px; 
+}
+
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #333;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.triangle.down {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 10px 20px;
+}

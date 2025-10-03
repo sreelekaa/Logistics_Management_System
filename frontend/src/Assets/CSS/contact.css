@@ -1,0 +1,83 @@
+/* src/Assets/CSS/contact.css */
+
+.contact-container {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2%;
+  background-color: #f9f9f9; /* Add background color if needed */
+  border-radius: 8px; /* Optional: Add border radius for a rounded container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a slight 3D effect */
+  
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.contact-description {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  margin-bottom: 40px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #555;
+}
+
+.contact-details {
+  margin-bottom: 40px;
+}
+
+.contact-details p {
+  margin: 10px 0;
+}
+
+.faq-section {
+  margin-bottom: 40px;
+}
+
+.faq-section h2 {
+  margin-bottom: 20px;
+}
+
+.faq-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.customer-support {
+  margin-bottom: 40px;
+}
+
+.customer-support h2 {
+  margin-bottom: 20px;
+}

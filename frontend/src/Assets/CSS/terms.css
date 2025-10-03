@@ -1,0 +1,20 @@
+
+  .terms-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .terms-content h1, .terms-content h2 {
+    margin-top: 20px;
+  }
+  
+  .terms-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .terms-content a {
+    color: #333;
+    text-decoration: underline;
+  }
+  

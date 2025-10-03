@@ -1,0 +1,744 @@
+/* General */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  
+}
+
+.main-content {
+  flex-grow: 1;
+  transition: margin-left 0.3s;
+}
+
+.sidebar-open {
+  margin-left: 250px;
+}
+
+.sidebar-closed {
+  margin-left: 80px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-info {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.nav-items {
+  margin-left: 20px;
+}
+
+.nav-items a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(135deg, #4e444b, #1e1516);
+  color: #ecf0f1;
+  transition: width 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.closed {
+  width: 80px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #191c20;
+}
+
+.sidebar ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Content */
+.dashboard-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.transports {
+  padding: 20px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.transports h3 {
+  text-align: center;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #ddd;
+}
+
+.filters button.active {
+  background-color: #333;
+  color: white;
+}
+
+.filters button:hover {
+  background-color: #ccc;
+}
+
+.transports table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.transports table th,
+.transports table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.transports table th {
+  background-color: #333;
+  color: white;
+}
+
+.transports table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.transports table tr:hover {
+  background-color: #ddd;
+}
+/* Styles for the Inventory Management Component */
+
+
+
+.inventory-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inventory-filters input,
+.inventory-filters select {
+  margin: 0 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+.inventory-table th,
+.inventory-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.inventory-table th {
+  background-color: #333;
+  color: white;
+}
+
+.inventory-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.inventory-table tr:hover {
+  background-color: #ddd;
+}
+
+.inventory-table .action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inventory-table button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.inventory-table button:hover {
+  background-color: #ddd;
+}
+
+
+.inventory-form {
+  display: flex;
+  flex-direction: column;
+}
+.inventory-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inventory-form button {
+  width: 100px;
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.inventory-form input,
+.inventory-form select,
+.inventory-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+} 
+
+.inventory-form textarea {
+  height: 100px;
+  resize: vertical;
+} 
+
+.inventory-form .btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  margin-top: 10px;
+}
+
+.inventory-form .btn:hover {
+  background-color: #444;
+}
+.inventory-table button:first-of-type {
+  background-color: #4CAF50;
+}
+
+.inventory-table button:nth-of-type(2) {
+  background-color: #f44336;
+}
+
+.inventory-form .btn[type="button"] {
+  background-color: #f44336;
+}
+
+.inventory-form .btn[type="button"]:hover {
+  background-color: #e53935;
+}
+
+.supplier {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.supplier table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.supplier th,
+.supplier td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.supplier th {
+  background-color: #333;
+  color: white;
+}
+
+.supplier thead .supplier th {
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.supplier tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.supplier tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.supplier th,.supplier td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.supplier th{
+  background-color:#333 ;
+}
+
+.supplier button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.supplier button:hover {
+  opacity: 0.8;
+}
+
+.supplier button:first-of-type {
+  background-color: #4CAF50;
+}
+
+.supplier button:nth-of-type(2) {
+  background-color: #f44336;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.supplier-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.supplier-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.supplier-form button {
+  width: 100px;
+  background-color: #4CAF50;
+  color: #fff;
+}
+.dashboard {
+  display: flex;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+
+
+.charts {
+  margin-top: 20px;
+}
+
+.dash-chart-container {
+  margin-bottom: 20px;
+  background-color: var(--card-background-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+/* Widget.css */
+.widget-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.widget {
+  background: linear-gradient(135deg, #42333e2a, #090607);
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 250px;
+  position: relative;
+}
+
+.widget-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.widget-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.widget-info p {
+  margin: 5px 0 0;
+  font-size: 24px;
+}
+
+.widget-chart {
+  margin-top: 20px;
+}
+
+.order-management {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.order-management header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-order {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.order-management .filters {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.order-management #search {
+  width: 200px;
+  padding: 5px;
+}
+
+.order-management #filter-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.order-management table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.order-management th,.order-management td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-management th {
+  background-color: #f2f2f2;
+}
+
+.order-management button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.order-management button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Modal container */
+.modal {
+  padding-top: 20px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  max-height: 80vh; 
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow-y: auto;
+}
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal h2 {
+  margin: 0;
+}
+
+.modal .close-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* Form styling */
+.modal label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.modal input {
+  width: calc(100% - 16px); /* Full width minus padding */
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Button container */
+.modal .button-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Space above the button container */
+}
+
+.modal .button-container button {
+  padding: 10px 20px; /* Increase button size */
+}
+
+.modal .button-container button:last-child {
+  margin-right: 0; /* Remove margin for the last button */
+}
+
+/* Header Section */
+.order-management header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.order-management header h1 {
+  margin: 0;
+}
+
+.order-management header .create-order {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.order-management header .create-order:hover {
+  background-color: #0056b3;
+}
+
+/* Filters Section */
+.order-management .filters {
+  margin-bottom: 20px;
+}
+
+.order-management .filters input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.order-management .filters button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.order-management .filters button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Section */
+.order-management table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-management table th, .order-management table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.order-management table th {
+  background-color: #f4f4f4;
+}
+
+.order-management table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.order-management table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Actions Section */
+.order-management button {
+  
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.order-management .download 
+{
+  background-color: #28a745;
+}
+
+.order-management button:hover {
+  background-color: #218838;
+}
+
+.order-management  .delete {
+  background-color: #dc3545;
+}
+
+.order-management .delete:hover {
+  background-color: #c82333;
+}
+
+/* Modal Section */
+.order-management .modal {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.order-management .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+}
+
+.order-management .modal-header h2 {
+  margin: 0;
+}
+
+.order-management .close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.order-management .close-button:hover {
+  color: #000;
+}
+
+.order-management .modal form {
+  padding: 20px;
+}
+
+.order-management .modal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.order-management .modal input[type="text"], .order-management .modal input[type="email"], .order-management .modal input[type="tel"], .order-management .modal input[type="date"], .order-management .modal input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.order-management .modal .button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.order-management .modal .button-container button {
+  margin-left: 10px;
+}

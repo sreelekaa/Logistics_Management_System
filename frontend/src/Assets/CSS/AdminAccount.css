@@ -1,0 +1,77 @@
+/* General styling for the page */
+.admin-account {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+  .admin-account h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each section */
+  .profile-info, .account-settings, .management-options {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .profile-info h2, .account-settings h2, .management-options h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Flexbox layout for items */
+  .info-item, .setting-item, .option-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .info-item label, .setting-item label, .option-item label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 600px) {
+    .info-item, .setting-item, .option-item {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .info-item label, .setting-item label, .option-item label {
+      margin-right: 10px;
+    }
+  
+    .info-item span, .setting-item span, .option-item span {
+      flex-grow: 1;
+      text-align: right;
+    }
+  
+    .btn-edit, .btn-change-password, .btn-toggle-2fa, .btn-manage-users, .btn-manage-content {
+      flex-shrink: 0;
+    }
+  }
+  
+  /* Button styling */
+  .btn-edit, .btn-change-password, .btn-toggle-2fa, .btn-manage-users, .btn-manage-content {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+  
+  .btn-edit:hover, .btn-change-password:hover, .btn-toggle-2fa:hover, .btn-manage-users:hover, .btn-manage-content:hover {
+    background-color: #0056b3;
+  }
+  
